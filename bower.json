@@ -1,0 +1,12 @@
+{
+  "name": "charting-dashboard",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "underscore": "~1.7.0",
+    "jquery": "~2.1.1",
+    "highcharts": "~4.0.4"
+  },
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Charting Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li>Project Name</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="main-wrapper">
+            <div class="configuration">
+                <div class="message" id="main-notification"><h1></h1></div>
+                <p id="sub-notification"><h1></h1></p>
+                <p>
+                    <a class="configure-button" id="config-button" style="margin-top: 30px"></a>
+                    <div class="clear"></div>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-background"></div>
+    <div class="popup">
+        <div class="popup-header">
+            <span>Parameters</span>
+            <span class="close-icon">x</span>
+        </div>
+        <div class="popup-content">
+
+            <div class="options">
+                <div class="add-parameter" id="addParameter">+ Add Parameter</div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="options" style="width: 165px !important;">
+                <div class="add-parameter" id="remove-all-parameter" style="width: 150px !important;">Remove All Parameters</div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="options">
+                <div class="add-parameter" id="generateChart">Generate Chart</div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="options" style="width: 400px">
+                <label>Chart Title</label>
+                <input type="text" id="chart-title" class="add-parameter" maxlength="100">
+                <div class="clear"></div>
+            </div>
+
+            <div class="param-count">
+                <span class="count"></span> Parameter(s) Configured
+            </div>
+
+            <hr/>
+            <div id="chart-params" class="chart-params">
+                <p>
+                    No Parameters configured. Click on Add Parameter to add parameters to the chart.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div id="graphCanvas"></div>
+    <footer>
+
+    </footer>
+
+</div>
+
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/highcharts/highcharts.js"></script>
+<script src="bower_components/highcharts/highcharts-more.js"></script>
+<script src="bower_components/highcharts/modules/exporting.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/chart.js"></script>
+<script src="scripts/constants.js"></script>
+<!-- endbuild -->
+</body>
+</html>

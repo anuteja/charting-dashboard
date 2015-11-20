@@ -1,0 +1,309 @@
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.wrapper {
+    height: auto;
+}
+
+.wrapper header {
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+}
+
+.wrapper nav ul {
+    display: inline-block;
+}
+
+.wrapper nav ul li {
+    margin-right: 40px;
+}
+
+.wrapper section .main-wrapper {
+    margin: 0 auto;
+}
+
+.main-wrapper .configuration {
+    width: 98%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.config-error{
+    color: #d44950
+}
+
+.config-success{
+    color: #3e8f3e;
+}
+
+.configure{
+    border: 1px double #d43f3a;
+    background: #d44950;
+
+}
+
+.re-configure{
+    background: #3e8f3e;
+    border: 1px double #419641;
+}
+
+.configuration p {
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.configuration .message {
+    font-size: 30px;
+}
+
+.configure-button {
+    border-radius: 4px;
+    width: 300px;
+    padding: 7px 13px;
+    color: white;
+    cursor: pointer;
+}
+
+/**popup styles starts here**/
+.popup {
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+}
+
+.popup-header {
+    position: relative;
+    height: 20px;
+    padding: 10px;
+    color: white;
+    background: #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.popup .popup-header .close-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 11px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.popup-content .options {
+    margin-left: 10px;
+    height: auto;
+    display: inline-block;
+    width: 115px;
+}
+
+.popup-content .param-count{
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.options label{
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.options input[type="text"]{
+    background: none;
+    width: 300px;
+    cursor: default;
+    color: #000000;
+    text-align: left;
+    padding: 4px;
+}
+
+.add-parameter {
+    border-radius: 4px;
+    width: 100px;
+    padding: 6px 7px;
+    border: 1px double #419641;
+    background: #3e8f3e;
+    color: white;
+    cursor: pointer;
+    height: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.popup-content {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: white !important;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.chart-params {
+    overflow-y: auto;
+    max-height: 419px;
+    min-height: 100px;
+    padding: 4px 12px 8px;
+    overflow-x: hidden;
+}
+
+.chart-params p{
+    font-size: 20px !important;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+.parameters {
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.parameters .params {
+    position: relative;
+}
+
+.parameters .params .config-panel {
+    margin-bottom: 30px;
+}
+
+.parameters .params .config-panel label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 2px;
+    margin: 0px 2px;
+}
+
+.parameters .params .config-panel input[type="text"] {
+    font-size: 14px;
+    color: #333;
+    padding: 4px;
+    width: 300px;
+    margin: 0px 2px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.parameters .params .config-panel input[type="radio"] {
+    font-size: 14px;
+    color: #333;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 2px;
+}
+
+.parameters .params .config-panel .value textarea {
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.parameters .params .config-panel .name {
+    display: block;
+    width: 450px;
+    float: left;
+}
+
+.parameters .params .config-panel .units {
+    width: 260px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+}
+
+.parameters .params .config-panel .units input[type="text"] {
+    width: 60px !important;
+}
+
+.parameters .params .config-panel .value {
+    display: block;
+    float: left;
+}
+
+.parameters .params .config-panel .value .param-value {
+    position: relative;
+    bottom: 25px
+}
+
+.rmv-parameter {
+    border-radius: 10px;
+    width: 21px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    right: -20px;
+    top: -18px;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+}
+
+/**popup styles ends here**/
+
+.wrapper footer {
+
+}
+
+.clear {
+    clear: both;
+}
+
+/**modal popup styles starts here**/
+
+.modalPopup {
+    display: block;
+    width: 90%;
+    position: fixed;
+    top: 72px;
+    left: 65px;
+    z-index: 1003;
+}
+
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1002;
+    background: #333;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.9;
+}
+
+/**modal popup styles ends here**/
